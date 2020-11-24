@@ -139,7 +139,7 @@ class Swiper {
       // Children needs to return slot items
       $wrapperEl.children = (options) => $el.children(options);
     } else {
-      $wrapperEl = $el.children(`.${swiper.params.wrapperClass}`);
+      $wrapperEl = $el.find(`.${swiper.params.wrapperClass}`);
     }
     // Extend Swiper
     extend(swiper, {
