@@ -4,7 +4,7 @@ export default function updateSize() {
   const swiper = this;
   let width;
   let height;
-  const $el = swiper.$el;
+  const $el = swiper.$wrapperEl;
   if (typeof swiper.params.width !== 'undefined' && swiper.params.width !== null) {
     width = swiper.params.width;
   } else {
